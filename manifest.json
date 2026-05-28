@@ -3,14 +3,18 @@
   "organization": "Custom Looker Studio Visuals",
   "description": "Daily active users trend with project launch and public holiday event markers, launch impact analysis, KPI cards and timeline slider.",
   "logoUrl": "",
-  "packageUrl": "index.html",
   "supportUrl": "",
   "components": [
     {
       "id": "activeUsersImpactView",
       "name": "Active Users Impact View",
       "description": "Shows active users, event markers and launch impact analysis.",
-      "iconUrl": ""
+      "iconUrl": "",
+      "resource": {
+        "js": "https://catchvarun23-svg.github.io/looker-active-users-impact-visual/main.js",
+        "config": "https://catchvarun23-svg.github.io/looker-active-users-impact-visual/config.json",
+        "css": "https://catchvarun23-svg.github.io/looker-active-users-impact-visual/style.css"
+      }
     }
   ]
 }
