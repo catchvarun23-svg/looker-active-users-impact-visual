@@ -1,0 +1,173 @@
+{
+  "data": [
+    {
+      "id": "date",
+      "label": "Date",
+      "description": "Date for the active users trend and event placement.",
+      "type": "DIMENSION",
+      "options": {
+        "min": 1,
+        "max": 1
+      }
+    },
+    {
+      "id": "eventType",
+      "label": "Event Type",
+      "description": "Event category such as Project Launch or Public Holiday.",
+      "type": "DIMENSION",
+      "options": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "id": "eventName",
+      "label": "Event Name",
+      "description": "Name of the event shown in the hover tooltip.",
+      "type": "DIMENSION",
+      "options": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    {
+      "id": "activeUsers",
+      "label": "Active Users",
+      "description": "Daily active users metric.",
+      "type": "METRIC",
+      "options": {
+        "min": 1,
+        "max": 1
+      }
+    }
+  ],
+  "style": [
+    {
+      "id": "lineSettings",
+      "label": "Line Settings",
+      "elements": [
+        {
+          "id": "activeLineColor",
+          "label": "Active Users Line Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#155e75"
+        },
+        {
+          "id": "activeLineWidth",
+          "label": "Line Width",
+          "type": "FONT_SIZE",
+          "defaultValue": 3
+        }
+      ]
+    },
+    {
+      "id": "eventMarkerSettings",
+      "label": "Event Marker Settings",
+      "elements": [
+        {
+          "id": "projectLaunchColor",
+          "label": "Project Launch Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#c2410c"
+        },
+        {
+          "id": "publicHolidayColor",
+          "label": "Public Holiday Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#7c3aed"
+        },
+        {
+          "id": "eventMarkerTextColor",
+          "label": "Event Marker Text Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#ffffff"
+        },
+        {
+          "id": "showEventMarkers",
+          "label": "Show Event Markers",
+          "type": "CHECKBOX",
+          "defaultValue": true
+        }
+      ]
+    },
+    {
+      "id": "impactSettings",
+      "label": "Impact Highlight Settings",
+      "elements": [
+        {
+          "id": "beforeHighlightColor",
+          "label": "Before 7 Day Highlight Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#e2e8f0"
+        },
+        {
+          "id": "afterHighlightColor",
+          "label": "After 7 Day Highlight Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#dcfce7"
+        },
+        {
+          "id": "selectedLaunchLineColor",
+          "label": "Selected Launch Line Colour",
+          "type": "FILL_COLOR",
+          "defaultValue": "#c2410c"
+        }
+      ]
+    },
+    {
+      "id": "fontSettings",
+      "label": "Font Settings",
+      "elements": [
+        {
+          "id": "fontFamily",
+          "label": "Font Family",
+          "type": "FONT_FAMILY",
+          "defaultValue": "Arial"
+        },
+        {
+          "id": "axisFontSize",
+          "label": "Axis Font Size",
+          "type": "FONT_SIZE",
+          "defaultValue": 11
+        },
+        {
+          "id": "kpiTitleFontSize",
+          "label": "KPI Title Font Size",
+          "type": "FONT_SIZE",
+          "defaultValue": 12
+        },
+        {
+          "id": "kpiValueFontSize",
+          "label": "KPI Value Font Size",
+          "type": "FONT_SIZE",
+          "defaultValue": 24
+        }
+      ]
+    },
+    {
+      "id": "layoutSettings",
+      "label": "Layout Settings",
+      "elements": [
+        {
+          "id": "kpiPanelWidth",
+          "label": "KPI Panel Width",
+          "type": "FONT_SIZE",
+          "defaultValue": 220
+        },
+        {
+          "id": "eventBandHeight",
+          "label": "Event Band Height",
+          "type": "FONT_SIZE",
+          "defaultValue": 60
+        },
+        {
+          "id": "showGridlines",
+          "label": "Show Gridlines",
+          "type": "CHECKBOX",
+          "defaultValue": true
+        }
+      ]
+    }
+  ],
+  "interactions": []
+}
